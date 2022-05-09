@@ -5,6 +5,10 @@ This script can help researchers to identify pollen species using a CNN pretrain
 
 The script requires the user to have livelossplot downloaded for the live training accuray and loss visualizations. The user can do this with the command !pip install livelossplots.
 
+## How to Use
+
+First the user must use the data_download() function to preprocess the data. Then they must use the create_model() function to create and train the CNN. Next they can use the prediction() to make a prediction on an uploaded image. Finallt, they can use the batch_predict() function to make predictions on a set of the validation images. 
+
 ## Data Set Up
 
 The data used in training the model must be set up as follows. You must have a main folder, perhaps called Pollen, with a subfolder for each pollen species with the name of that pollen species. The path on your machine to the dataset must be passed into the data_download() function in quotes, so that the data can be preprocessed for training.
